@@ -1,0 +1,883 @@
+# Hi there, hope this gets you to jump into Python programming fast enough
+#Give you hands on python experience,code-reading and familiarity with the language
+# You can find advanced Python program with the similar style in my Github account
+
+#   -- https://github.com/Mbakaya or blog  wee2t.wordpress.com
+
+# Share, modify, learn.
+#   ****************************HAPPY PYTHON*********************************************
+'''
+1.Getting syntax right
+2.Practicing concepts
+3.Doing Projects
+4.Advance skills 
+5.Problem oriented
+'''
+#usr/bin/env/python
+
+import random
+import sys
+import random
+
+
+'''
+list_of_numbers = L1,L2,L3
+largest_no = L1
+no = 1,2,3
+smallest = no < largest_no
+huge = no >largest_no
+print ("i know you huge bro like this:", huge)
+print ("chill you are as small as this:",smallest)
+no1 = 20
+no2 = 50
+no3 = 30
+
+no2 = no1+no3
+
+
+Assume given marks are x for a student:
+If given marks are more than 95, then
+Student is brilliant
+If given marks are less than 30, then
+Student is poor
+If given marks are less than 95 and more than 30, then
+Student is average'''
+
+'''student_marks = x
+    if student_marks>95
+        print "Brilliant"
+ 
+student_marks <30
+    print "Poor"
+    else:
+student_marks <95 and >30
+    print "Average"'''
+
+     # Python Decision Making - Example
+'''
+while True:
+    print("Enter 'x' for exit")
+    val =input("Enter a numbre")
+    if val=='x':
+        break
+    else:
+        numb = int(val)
+        if numb>0 and numb<100:
+            print ("You entered numbre between 0-50.\n")
+        else:
+            print ("You entered numbre other than 0-50.\n")
+            '''
+
+
+
+# Python Decision Making - if elseif....else
+'''
+while True:
+    print ("Enter 'x' for exit.")
+    n = input("Enter any number: ")
+    if n == 'x':
+        break
+    else:
+        val = in(n)
+        if val>0 and val<100:
+            if val>0 and val<25:
+                print("You have entered a number between 0-25.\n")
+            elif val==25:
+                print("You have entered 25.\n")
+            elif val>25 and val<50:
+                print("You entered a number between 25-50.\n")
+            elif val==50:
+                print ("You entered 50.\n")
+            elif val>50 and val<75:
+                print("You entered a number between 50-75.\n")
+            elif val ==75:
+                print("You entered 75.\n")
+            else:
+                print ("You entered a number between 75-100.\n")
+        elif val==0:
+            print("You entered 0.\n")
+        elif val==100:
+            print("You entered 100.\n")
+        else:
+            print("You entered either negative or a number greater than 100.\n")
+      '''
+
+# Python Program - Check Even or Odd
+'''while True:
+    print ("Enter 'x' for exit")
+    num = input("Enter any number:")
+    if num=='x':
+        break
+    try:
+        number = float(num)
+    except ValueError:
+        print ("Please enter a number")
+    else:
+        check = number%2
+        if check == 0:
+            print (int(number), "is an even number.")
+        elif check ==1:
+            print (int(number), "is  an odd number.")
+        else:
+            print(number, "is a strange number bro!")'''
+
+# Python Program - Check Prime Number or Not
+
+'''
+while True:
+    print ("Enter 'x' for exit")
+    num = input("Enter any number please:")
+    if num=='x':
+        break
+    try:
+        number = int(num)
+    except ValueError:
+        print ("Please, enter a number....")
+    else:
+        for i in range(2,number):
+            if number % i == 0:
+                print (number, "is not a prime number")
+                break
+            else:
+                print (number, "is a prime number")
+'''
+
+
+# Python Program - Check Alphabet or Not
+
+'''while True:
+    print("Enter '0' for exit.")
+    ch = input("Enter any character: ")
+    if ch == '0':
+        break
+    else:
+        if((ch>='a' and ch<='z') or (ch>='A' and ch<='Z')):
+            print (ch, "is an alphabet")
+        else:
+            print (ch, "is not an aphabet")'''
+
+# Python Program - Check Vowel or Not
+
+'''while True:
+    print ("Enter '0' for exit.")
+    ch =input("Enter any character:")
+    if ch == '0':
+        break
+    else:
+        if (ch =='a' or ch == 'A' or ch == 'e' or ch =='i' or ch == 'I'
+            or ch == 'o' or ch == 'O' or ch == 'u' or ch == 'U';
+            print (ch, "is a vowel")
+        else:
+            print (ch, "is not a vowel")'''
+
+# Python Program - Check Leap Year or Not
+
+'''while True:
+    print ("Enter 'x' for exit")
+    num = input("Enter year")
+    if num == 'x':
+        break
+
+    try:
+        year = int(num)
+    except ValueError:
+        print ("Please enter a year...")
+    else:
+        if ((year % 4 == 0) and (year % 100 != 0)):
+            print (year, "is a leap Year")
+        elif (year % 100 == 0):
+            print (year, "is not a leap Year")
+        elif (year % 400 == 0):
+            print (year, "is not a leap year")
+        else:
+            print (year, "is not a leap year")'''
+
+# Python Program - Check Original Equals Reverse or Not
+'''while True:
+    print ("Enter the 'X' to exit")
+    numb = input("Enter the number please")
+    if numb == 'X':
+        break
+    try:
+        number = int(numb)
+    except ValueError:
+        print("Please, enter a number...")
+    else:
+        orig = number
+        rev = 0
+        while number > 0:
+            rev = (rev * 10) + number % 10
+            number //= 10
+        if orig == rev:
+            print("Original number is equal to its reverse.\n")
+        else:
+            print("Original number is not equal to its reverse.\n")'''
+
+#Python numbers are used to hold a numeric values. They are assigned numeric values eg of code
+
+'''numb1 = 10
+numb2 = 30
+print "numb1 is",numb1, "and numb2 is", numb2'''
+
+#deleting a number
+'''numb1 =30
+numb2 =40
+
+print (" i know he",numb1,"is not here, same for him",numb2);
+del numb2 ,numb1
+print (numb1,numb2);
+'''
+# Python strings are a group of contiguous  characters under SINGLE or DOUBLE quotes
+# Python String - Example Program
+
+'''str = 'Hello Python'
+
+print (str)             # this will print the complete string
+print (str[0])          # this will print the first character of the string
+print (str[2:8])        # this will print the characters starting from 3rd to 8th
+print (str[3:])         # this will print the string starting from the 4th character
+print (str * 3)         # this will print the string three times
+print (str + "String")  # this will print the concatenated string
+'''
+#String Manipulation
+
+# @String Escape
+print "Watch out for this string Escapes!"
+#\a        #Alert Bell
+#\cx	      #Control-x
+#\b	      #Backspace
+#\C-x	  #Control-x
+#\f	      #Formfeed
+#\e	      #Escape
+#\M-\C-x	  #Meta-Control-x
+#\r	      #Carriage return
+#\n	      #Newline
+#\nnn	  #Octal notation
+#\s	      #Space
+#\x	      #x
+#\t	      #Tab
+#\v	       #Vertical tab
+#\xnn	  #Hexadecimal notation
+
+#String Printing
+'''
+while True:
+    print("eNTER 'x' to jump strings")
+    string =input("Enter string here: ")
+    if string =='x':
+        break
+    else:
+        print(" the string you just printed is",string, "\n")
+'''
+# Python Program - Find Length of String
+# python uses len() function to get length of string
+'''
+while True:
+    print("Enter 'y' to exit")
+    string = inpput("Enter the string please: ")
+    if string == 'y':
+        break
+    else:
+        print ("Length of string ==", len(string), "\n")
+'''
+
+# Python Program - Compare Two Strings
+# NB - check if equal or not
+'''
+while True:
+    print ("Press 'x' if you don't like strings!")
+    string1 = input("Enter string1:")
+    string2 = input("Enter string2:")
+    if string1 =='x':
+        break
+    else:
+        if string1 == string2:
+            print ("both strings are Equal. \n")
+        else:
+            print ("Strings are Not Equal. \n")
+   '''
+
+
+# String Concatenation
+# Adding strings to each other to produce a new string
+'''
+while True:
+    print ("Press 'y' to exit concatenation")
+    string1 = input("Enter string one:")
+    string2 = input("Enter string two!:")
+    if string1 =='y':
+        break
+    else:
+        string3 = string1 + string2
+        print ("The new string formed is: ",  string3)
+'''
+
+#Reverse String
+'''
+while True:
+    print ("Press 'y' to exit string")
+    string1 = input("Enter your first string:  ")
+    if string =='y':
+        break
+    else:
+        revstring = string1[::-1]
+        print ("Reverse String =",revstring, "\n")
+'''
+# Python Program - Remove Vowels from String
+
+'''
+while True:
+    print ("Enter 'y' to escape")
+    string = input("Enter any string: ")
+    if string =='y':
+        break
+    else:
+        newstr = string
+        print("\n Remove vowels from thsi string asap!.....")
+        vowels = ('a', 'e' 'i' 'o' 'u')
+        for x in string.lower():
+            if x in vowels:
+                newstr =newstr.replace(x,"")
+                print ("new string after removing vowels")
+                print (newstr,"\n")
+'''
+#Removing punctuation from strings
+                       #1st section is commented with the ''' tags
+                       #2nd section is also commented with ''' tags
+'''
+while True:
+    print ("to leave my strings enter 'x'")
+    string = input("Enter my string: ")
+    if string =='x':
+        break
+    else:
+        newstr = sring
+        print ("\nEliminating punctuations..................")
+        punctuations = #!()-{};:'"\,<>,/?@#$%^&*_
+        '''
+
+'''
+        for x in punctuations:
+            newstr = newstr.replace(x,"")
+        print ("New string after punctuation elimination!")
+        print (newstr,"\n")
+'''
+
+#To remove or delete the occurrence of a given word in a string
+# enable entry of name to be deleted in occurence
+# write function to delete  the number in occurence
+#word_list = string.split()
+'''
+while True:
+    print ("Tired already? enter 'x' to exit ")
+    string = input("Enter any string:")
+    if string =='x':
+        break
+    else:
+        word = input("Enter number to delete:")
+        print("\nDeleting given word from string")
+        print ("New string after deleting given word:")
+        word_list = string.split()
+        ''.join([i for i in word_list if i not in word])
+        print ("\n")
+
+'''
+#Counting characters in python string
+#prompt entry of string
+
+# Python Program - Count Character in String
+#val = string.count(char)
+'''
+while True:
+    print("Enter 'x' for exit.")
+    string = input("Enter any string: ")
+    if string == 'x':
+        break
+    else:
+        char = input("Enter a character to count: ")
+        val = string.count(char)
+        print(val, "\n")
+   '''
+
+# Python Program - Count Number of Each Vowels
+# enter the string
+#start counting vowels on string
+#display count of vowels
+                                        #string = string.casefold()
+                                        #count = {}.fromkeys(vowels, 0)
+'''
+while True:
+    print("Enter 'x' to exit")
+    string = input("Enter any string")
+    if string == 'x':
+        break
+    else:
+        vowels = 'aeiou'
+        string =string.casefold()
+        count = {}.fromkeys(vowels,0)
+        for char in string:
+            if char in string:
+                if char in count:
+                    count[char] += 1
+        print (count, "\n")
+
+'''
+
+# Python Program - Count Word in Sentence
+#enter the string
+#implement the length function
+#display
+         #len(string)
+'''
+while True:
+    print("Enter 'x' for exit.")
+    string = input("Enter any string: ")
+    if string == 'x':
+        break
+    else:
+        word_length = len(string.split())
+        print("Number of words =", word_length, "\n")
+'''
+
+#PYTHON LISTS
+#items placed in a closed square bracket
+#items in a list are of the same type
+#Python Lists - Example Program
+'''
+list1 = ["python", "list", 1954,2323, 432]
+list2 = ["this", "is", "another", "list"]
+
+print(list1)  #this will print the complete list
+print(list1[1:4])  #this will print the elements starting from 2nd till 4th
+print(list1[1:])   #this will print the elements starting from the 2nd element
+print(list1[0])    #this will print the first element of the list
+print(list1 * 2)   #this will print the list two times
+print(list1 + list2)    #this will print the concatenated list
+'''
+
+#TUPLES
+#Sequence of immutable python objects
+#enclosed with parenthesis
+#cannot be changed once written
+
+tuple1 = ("python", "tuple", 1952, 2323, 432);
+tuple2 = (1,2,3,4,5);
+tuple3 = ("a", "b", "c", "d", "e");
+
+# Python Tuple - Example Program
+
+tuple1 = ("python", "tuple", 1952, 2323, 432);
+
+print(tuple1)         #this will print the complete tuple
+print(tuple1[1:4])    #this will print the 1st elements starting from 2nd to 4th
+print(tuple[0])       #this will print the 1st element of the tuple
+print(tuple * 2)      #this will print the tuple two times
+'''
+
+#DICTIONARY
+
+#Dictionary are simply the kind of hash table type.
+#Dictionaries are enclosed within the curly braces {}
+#values can be assigned and accessed using the square braces [].
+
+#python program
+'''
+dictionary1 = {}
+dictionary1['one'] = "this is one"
+dictionary1[2]     = "this is two"
+
+smalldictionary = {'name': 'Devraj','id':9388,'branch': 'cs'}
+
+print(dictionary1[2])          #this will print the value for 2 key
+print (dictionary['one'])      #this will print the value for 'one' key
+print (smalldictionary)         #this will print the complete dictionary
+print (smalldictionary.keys())   #this will print all the keys
+print (smalldictionary.values())  #this will print the values
+'''
+#PYTHON FUNCTIONS
+
+#A function in python, is a block of code, used to perform a particular action
+
+#function definition
+    # 1.function blocks in python, begins with the keyword def, followed by the function name and then parentheses
+    # 2.the parameters/arguments should be placed inside these parentheses
+    # 3.the code block of the function starts with a colon (:)
+    # 4. the return statement exits a function, passing back an expression to the function caller
+    # 5.a return statement with no any arguments is the same as return None
+
+'''
+def function_name(parameters):
+	"function_doc_string"
+	function_suite
+	return [expression]
+'''
+
+'''
+#TEST THIS code!
+# takes one string parameter and prints this argument as output:
+
+def printit(strn):
+	"This will print the passed string into this function"
+	print(strn)
+	return
+'''
+
+#Python Function Calling
+
+#there are two ways to  call a python function
+    # 1. Calling it from another function
+    # 2. Calling it directly from a function prompt
+#CodeEXample
+
+
+#  Python Functions - Call a Function in Python - Example Program
+#  general formula of calling functions in python  = function()
+'''
+def printit(strn):
+    "This will print a passed string inside this function"
+    print(strn)
+    return;
+
+printit("This is the first call to the user-define function, printit");
+printit("This is the second call to the same function, that is, printit");
+printit("This is an another call to the same function, printit");
+'''
+
+#PYTHON MODULES
+
+#-Module provides you to logically organize your python code.
+
+# -A module is a Python object with arbitrarily named attributes that you can bind and reference.
+
+#   -it involves grouping of related code into  a module in python
+#     -this makes it easy to re-use, & understand a python program
+
+#The following defines a python function - printit that is going to be saved in our module(pracmodule.py)
+
+# to use the printit function, we save it in pracmodule & call the module using Import statement in another python source file
+
+# Python function Printit - Example Program
+'''
+def printit(arg):
+    print("Hello, ", arg);
+    return
+
+
+#  Calling a python module in python source file using import  - Example Program
+
+# Python Module - Example Program
+
+import mymodule
+
+mymodule.printit("Weever");
+'''
+
+
+
+
+#TIME in Python
+
+#   The time.time() function returns the current system time in ticks since 12:00am since January 1, 1970
+#Time intervals are floating-point numbers in units of seconds. -TICK
+
+# Python Date and Time - Example Program
+
+# time since 1970
+'''
+import time; # to include time module in this python source program
+
+ticks = time.time()
+print ("Number of ticks since 12:00am, January 1970 is:",ticks);
+
+
+# printing the current date and time in python:
+
+# Python Date and Time - Example Program
+
+import  time;
+
+localtime = time.asctime(time.localtime(time.time()))
+print ("the current time = ", localtime);
+
+#printing the calendar of a certain month in a certain year
+
+# Python Date and Time - Example Program
+import calendar
+
+calend = calendar.month(2017,2)
+print (calend)
+
+#Display Calendar in python
+
+import calendar
+
+while True:
+    print ("Enter the 'Y' to exit")
+    y = input("Enter Year:")
+    m = input("Enter month:")
+    if y == 'Y':
+        break
+    else:
+        yy = int(y)
+        mm = int(m)
+        print ("\n", calendar.month(yy,mm))
+
+# Python Program - Print Date and Time
+import datetime
+
+while True:
+    print ("want to print Today's Date and Time? (y/n): ")
+    check = input()
+    if check == 'n':
+        break
+    else:
+        print ("Today's date & time:")
+        print (datetime.datetime.today())
+        print()
+'''
+
+
+#Python FILE HANDLING
+
+
+#FILE I/O
+#File opening open(file.txt) function  including other methods to open files.
+# simple example
+
+'''
+c = open("yourfiles.txt",'r')           #Opening a file to read only
+
+c = open("yourfiles.txt", 'r+')      #Opens a file for reading and writing both
+
+c = open("yourfiles.txt",'rb')       #Opens a file for reading only in binary format
+
+c = open("yourfiles.txt", 'rb+')    #Opens a file for reading and writing both, in binary format
+
+
+
+c = open("yourfiles.txt", 'w')    #Opens a file for writing only. This mode creates a new file if not exist
+
+c = open("yourfiles.txt", 'w+')   #Opens a file for reading and writing both.
+
+c = open("yourfiles.txt",'wb')    #Opens a file for writing only in binary format
+
+c = open("yourfiles.txt", 'wb+') #Opens a file for reading and writing both, in binary format
+
+
+
+c = open("yourfiles.txt", 'a')   #Opens a file for appending. This mode also creates a new file if not exist
+
+c = open("yourfiles.txt", 'a+')  #Opens a file for appending and reading both
+
+c = open("yourfiles.txt",'ab')   #Opens a file for appending in binary format
+
+c = open("yourfiles.txt", 'ab+')   #Opens a file for appending and reading both, in binary format
+
+
+
+#CLOSING FILES IN PYTHON
+#Use close() function to close an opened file in your python program like this:
+
+c = open("yourfiles.txt")
+c.close()
+'''
+#WRITING FILES IN PYTHON
+#creates a file name yourfiles.txt and then writes some line of text inside it.
+
+'''
+c = open(yourfiles.txt, 'w')
+
+print("File created, successfully...!!");
+print("writing something good about yourself in that file.......\n");
+
+c.write("this is a python tutorial file\n");
+c.write("this is how we operate files in python\n");
+c.write("this is just an example\n");
+c.write("but you must practice this by writing more code\n");
+
+c.close()
+
+print ("File successfully closed...!!");
+'''
+
+
+#READING FILES IN PYTHON
+#Use read() function to read the content present inside the file
+'''
+c = open(yourfile.txt, 'r')
+
+print("File, yourfile.txt,opened successfully...!!");
+print("reading file:\n");
+print(c.read());
+
+c.close();
+
+print("File successfully closed.......!!");
+'''
+
+
+#COPYING FILES IN PYTHON
+
+#To copy files in python, you have to first import copyfile from shutil library (to use copyfile() function)
+
+# The copyfile() function copies the content of source file into destination file using import function (Remember.......)
+
+# After importing you have to ask to include  the  SOURCE & DESTINATION of the file to carry out the copy operation
+
+# TO--BREAK---IT--DOWN
+    #prompt user to enter the name of  Source and Destination of file we are copying
+
+    #ask user if he/she wants to open the file we have copied in the destination
+
+    #if he/she wants to open then file
+    #print the content in the file
+
+# The Program - Copy Files
+'''
+
+from shutil import copyfile
+
+while True:
+    print ("Enter 'y' for exit.")
+    sourcefile = input("Enter source file name: ")
+    destinationfile = input("Enter destination file name: ")
+    if sourcefile =='y':
+        break
+    else:
+        copyfile(sourcefile,destinationfile)
+        print("File copied successfully!")
+        print ("Do you want to display the content ? (y/n): ")
+        if check =='n':
+            break
+        else:
+            c = open(destinationfile,"r")
+            print (c.read())
+            c.close()
+            print()
+
+        print()
+'''
+#MERGING FILES IN PYTHON
+#To merge two files in python, you have to ask from user to enter name of the first and second file
+
+# then ask a file name to create a file to place the merged content of the two file into this newly created file.
+
+#TO--BREAK--IT--DOWN
+     #NB - Dont forget to import shutil in your program
+    # 1. Enter the first file
+    # 2. Enter the second file
+    # 3. Create the third file where content of first and second will be merged
+    #          ------------- Read them (First file + Second file) = Write them here(Third file)
+
+
+# Python Program - Merge Two Files
+'''
+
+import shutil
+
+while True:
+    print("Enter 'y' to exit")
+    file1 = input("Enter the first file name: ")
+    file2 = input("Enter the second file name:")
+    if file1 =='y':
+      break
+    else:
+        file3 = input("Create a new file to merge content of tow file inside this file: ")
+        print()
+        print("Merging the content od the two files in",file3)
+        with open(file3,"wb") as wfd:
+            for f in [file1,file2]:
+                with open(f, "rb") as fd:
+                    shutil.copyfileobj(fd,wfd, 1024 * 1024 * 10)
+        print("Content merged successfully.!")
+        print ("Want to see ? (y/n): ")
+        check = input()
+        if check =='n':
+            break
+        else:
+            c =open(file3, "r")
+            print(c.read())
+            c.close()
+            print()
+        print()
+'''
+ #LISTING FILE DIRECTORIES IN PYTHON
+
+     #To list all the files present in the directory given by the user in python you have to import the following in your program
+   # 1. import os  to use---
+      #      ----- to use os.chdir() to get the desired directory
+
+    #2. import glob library
+       #    ----- to use glob.glob() to find all the files present inside that directory
+
+# Python Program - List Files in Directory
+'''
+import glob, os
+os.chidr("C:/Python34")
+for file in glob.glob("*.txt"):
+    print(file)
+'''
+
+
+#DELETING FILES IN PYTHON
+#  To delete file in python, you have to import os library
+   # -------- to use os.remove() function to remove the desired file given by the user
+
+    # Python Program - Delete File
+'''
+
+import os
+
+while True:
+    print("Enter 'y' to exit")
+    file1 = input("Enter name of file to delete: ")
+    if file1 == 'y':
+        break
+    else:
+        print("Removing the file......................")
+        os.remove(file1)
+        print ("File,", file1,"File successfully deleted!!\n")
+'''
+
+
+        #PYTHON EXCEPTION HANDLING
+'''
+   ---An exception is an event, occurs during the program execution, that disrupts the normal program flow.
+ if a python script raises an exception, then this exception must be handled immediately
+ to continue the program, otherwise it terminates and quiets.----
+ '''
+    # 1.  We handle exceptions in python program  by  just by placing it inside the try block.
+        # 2. We  include an except statement after the try block.........
+        #   3...... followed by the block of code that handles the problem as possible!
+
+    # Here is Pseudocode for python exception handling
+'''
+    try:
+        operation code here
+        ...
+    except Exception1:
+       if there is Exception1, then this block is created
+       ...
+    except Exception2:
+        if there is Exception2 then this block is created
+        ...
+    else;
+        if __name__ == '__main__':
+            if  there is no any exception then this block is executed
+
+
+        # Let us try opening a file that doesnt exist in our directory file and see how pyhtn program handles the exception
+
+# Python Exceptions - Python Exception Handling - Example Program
+
+try:
+    c = open("NOfile.txt", 'r')
+    print (c.read());
+except IOError
+    print ("Error in opening the file , file doesn't exist");
+else:
+    print("File read sucessfully....!!");
+    c.close()
+'''
+
+
